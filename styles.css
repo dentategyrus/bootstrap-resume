@@ -4,6 +4,7 @@
 
 .body{background-color: floralwhite;font-family: Consolas;}
 
+.animated{animation-duration: 6s;}
 
 p {font-family: Consolas;background-color: grey; padding:1rem; font-size:0.8rem; }
 
