@@ -11,8 +11,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <!--Emojy CSS-->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <!--Toastr-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-   
+    <link href="toastr.css" rel="stylesheet"/>
+    
     <!--My CSS style sheet-->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Alex IVASCU Resume, world!</title>
@@ -115,7 +117,7 @@
          <div class="card">
             <div class="card-header" id="headingFive">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" >
                   Skills
                 </button>
               </h2>
@@ -131,10 +133,24 @@
 
             </div>
         </div>
+
+        <h2>toastr button</h2>
+        <input type="text" placeholder="test" id="txtMessage"/>
+        <button id="btnToast">toastr</button>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="toastr.js"></script>
     
+    <script>
+    $(document).ready(function(){
+      $('#btnToast').on('click', function(){
+        var msg = $('#txtMessage').val();
+        tostr.info(msg);
+      });
+    });
+    </script>
 </body>
 
 </html>
