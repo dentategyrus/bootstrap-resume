@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "geo-distance": "^0.2.0",
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.4.0",
+    "toastr": "^2.1.4"
   }
 }
