@@ -1,5 +1,5 @@
 {
-  "name": "project-1",
+  "name": "bootstrap-resume",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["bootstrap-resume"],
+  "author": "alex ivascu",
   "license": "ISC",
   "dependencies": {
     "geo-distance": "^0.2.0",
